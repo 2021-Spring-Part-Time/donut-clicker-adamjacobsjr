@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/js/style.css">
+  <title>Donut Maker</title>
+  <div class="container">
+    <header class="header">
+        <a href="http://localhost:8080/"><h1 class="header__title">Fred the Baker Baking Company</h1></a>
+        <input class="header__menu_btn" type="checkbox" id="header__menu_btn"/>
+        <label class="header__menu_icon" for="header__menu_btn"><span class="header__nav_icon"></span></label>
+        <ul class="header__nav_list">
+            <li class="header__nav_listItem"><a href="https://orteil.dashnet.org/cookieclicker/">Inspired by</a></li>
+            <li class="header__nav_listItem"><a href="/about">About</a></li>
+        </ul>
+    </header>
+    </head>
+    <br>
+    <div class="main">
+        <div class="stats">
+            <div class="donut-count-div">
+                <h2 class="donut-count"></h2>
+            </div>
+            <br>
+            <p>
+              <br>
+            </p>
+            <div class="click-donut-div">
+              <img class="add-donut" src="src/css/images/donut.jpg" usemap="#donut">
+              <h3 class="donuts-per-click">Current Donuts</h3>
+              <h2 class="donuts-per-second"> 0</h2>
+          </div>
+            <div class="flex">
+                    <h2>Donut Multipliers:</h2>
+                    <h2 class="donut-multiplier-count">0</h2>
+                    <p class="donut-multiplier-price">Cost: 10 Donuts </p>
+                    <button visibility="visable"class="add-donut-multiplier button">Purchase Multiplier</button>
+
+                </div>
+
+                <div class="auto-clicker-div sale">
+                    <h2>Auto-Clickers:</h2>
+                    <h2 class="auto-clicker-count">0</h2>
+                    <p class="auto-clicker-price">Cost: 100 Donuts <br></p>
+                    <button class="add-auto-clicker button">Purchase Auto-clicker</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="reset-div">
+            <button class="reset-button">Reset</button>
+        </div>
+    </div>
+   
+        <div class="anchor"></div>
+    </div>
+    <script src="/src/js/DonutMaker.js"></script>
+    <script src="/src/js/app.js" type="module"></script>
+</body>
 </html>
